@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-box position="0 1.5 -5" color="#3498db" scale="1 1 1"></a-box>
+
+    <a-sphere position="0 2.8 -5" color="#ecf0f1" scale="0.3 0.3 0.3">
+      <a-animation attribute="position" dur="2000" to="0 2.4 -5" direction="alternate" repeat="indefinite"></a-animation>
+    </a-sphere>
+
+    <a-cylinder position="-0.1 2.9 -4.9" color="black" scale="0.05 0.05 0.05"></a-cylinder>
+    <a-cylinder position="0.1 2.9 -4.9" color="black" scale="0.05 0.05 0.05"></a-cylinder>
+
+    <a-cylinder position="-0.5 1.5 -5" color="#e74c3c" scale="0.05 0.5 0.05" rotation="0 0 45"></a-cylinder>
+    <a-cylinder position="0.5 1.5 -5" color="#e74c3c" scale="0.05 0.5 0.05" rotation="0 0 -45"></a-cylinder>
+    <a-cylinder position="-0.3 0.75 -5" color="#e74c3c" scale="0.1 0.5 0.1"></a-cylinder>
+    <a-cylinder position="0.3 0.75 -5" color="#e74c3c" scale="0.1 0.5 0.1"></a-cylinder>
+    <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#2ecc71"></a-plane>
+
+    <!-- Sky -->
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>
+</body>
+</html>
